@@ -14,7 +14,8 @@ nav ul li a{
   color: black;
 }
 nav ul li.active {
-  background-color:#fc5185;
+  border-bottom: 2px solid #fc5185;
+/*   background-color:#fc5185; */
   border-radius: 15px;
   transition: 0.3s ease border-bottom;
 }
