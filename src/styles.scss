@@ -1,0 +1,10 @@
+@import 'bootstrap/scss/bootstrap';
+:root {
+    --grad-1: #fc5185;
+    --grad-2: rgb(149, 216, 86);
+}
+body{
+    background-color: #1d1d20;
+    min-width: 100vw;
+    min-height: 100vh;
+}

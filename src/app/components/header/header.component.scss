@@ -1,0 +1,40 @@
+.cstmContainer {
+    padding: 1rem;
+}
+
+.logoBox {
+    width: 100px;
+    height: 80px;
+    transition: 0.5s all ease-in-out;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.col-sm-6 {
+    display: flex;
+    align-items: center;
+}
+
+.logoBox:hover {
+    transform: scale(1.2);
+}
+
+.git,
+.linked {
+    color: rgb(179, 179, 179);
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.linked:hover {
+    color: #0a66c2;
+}
+
+.git:hover {
+    color: white;
+}
