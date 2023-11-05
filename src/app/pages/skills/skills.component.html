@@ -1,5 +1,5 @@
-<div class="cstmContainer">
-    <h1>Skills</h1>
+<div class="cstmContainer" [ngStyle]="{ 'height.px': setHeight() }">
+    <h3>Skills Set</h3>
     <div id="chart">
         <apx-chart
           [series]="chartOptions.series"

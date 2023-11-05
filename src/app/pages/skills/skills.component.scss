@@ -1,9 +1,10 @@
 .cstmContainer {
     padding: 0 5rem;
-    height: 100%;
     width: 100%;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
-h1{
+h3{
     color: white;
 }

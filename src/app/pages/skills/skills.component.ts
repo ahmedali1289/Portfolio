@@ -26,7 +26,6 @@ export type ChartOptions = {
 export class SkillsComponent {
   @ViewChild("chart") chart!: ChartComponent;
   public chartOptions: any;
-
   constructor() {
     this.chartOptions = {
       series: [
@@ -37,7 +36,10 @@ export class SkillsComponent {
       ],
       chart: {
         type: "bar",
-        height: 350
+        height: this.setHeight(),
+        toolbar: {
+          show: false
+        }
       },
       plotOptions: {
         bar: {
@@ -46,9 +48,6 @@ export class SkillsComponent {
       },
       dataLabels: {
         enabled: false,
-        style: {
-          colors: ['#ffffff']
-        },
       },
       xaxis: {
         categories: [
@@ -79,10 +78,14 @@ export class SkillsComponent {
       yaxis:{
         labels:{
           style: {
-            colors: ['#ffffff'],
+            colors: '#ffffff'
           },
         }
       }
     };
+  }
+  setHeight(){
+    const divHeight = document.getElementById('fixedRow')
+    return divHeight?.clientHeight
   }
 }
